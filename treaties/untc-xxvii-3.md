@@ -2,3 +2,4 @@
 UN Treaty Collection reference: XXVII-3.
 Depositary: Secretary-General of the United Nations.
 Signature: 1989-03-22.
+Ratification: 1994-12-14.
