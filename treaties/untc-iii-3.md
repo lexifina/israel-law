@@ -2,3 +2,4 @@
 UN Treaty Collection reference: III-3.
 Depositary: Secretary-General of the United Nations.
 Signature: 1961-04-18.
+Ratification: 1970-08-11.
