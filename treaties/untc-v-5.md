@@ -2,3 +2,4 @@
 UN Treaty Collection reference: V-5.
 Depositary: Secretary-General of the United Nations.
 Signature: 1968-06-14.
+Accession: 1972-01-26.
