@@ -2,3 +2,4 @@
 UN Treaty Collection reference: XVIII-12.
 Depositary: Secretary-General of the United Nations.
 Signature: 2000-12-13.
+Ratification: 2006-12-27.
