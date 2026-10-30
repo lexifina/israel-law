@@ -1,0 +1,617 @@
+{
+ "country": "IL",
+ "acts": [
+  {
+   "slug": "catalogue",
+   "short": "Catalogue",
+   "title": "Catalogue of the Basic Laws of Israel (facts only, no law text)",
+   "url": "https://www.wikidata.org/wiki/Q2368137",
+   "versions": [
+    {
+     "from": "1958-02-12",
+     "units": 1,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1960-07-19",
+     "units": 2,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1964-06-16",
+     "units": 3,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1975-07-21",
+     "units": 4,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1976-03-31",
+     "units": 5,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1980-07-30",
+     "units": 6,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1984-02-28",
+     "units": 7,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1988-02-15",
+     "units": 8,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1992-03-17",
+     "units": 9,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "1994-03-09",
+     "units": 10,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "2001-03-07",
+     "units": 11,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "2014-03-12",
+     "units": 12,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    },
+    {
+     "from": "2018-07-19",
+     "units": 13,
+     "source_url": "https://www.wikidata.org/wiki/Q2368137",
+     "sha256": "07b6d0da39156aa953a448c36905d717788ffe4ec64b1a2a3cad397d5cdd65f4"
+    }
+   ]
+  },
+  {
+   "slug": "treaties",
+   "short": "Treaties",
+   "title": "Treaty actions of Israel (UN Treaty Collection)",
+   "url": "https://treaties.un.org/",
+   "versions": [
+    {
+     "from": "1949-06-21",
+     "units": 1,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1949-08-17",
+     "units": 2,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1950-03-09",
+     "units": 2,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1951-08-01",
+     "units": 3,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1954-10-01",
+     "units": 4,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1958-12-23",
+     "units": 4,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1961-04-18",
+     "units": 5,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1961-08-30",
+     "units": 6,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1962-11-23",
+     "units": 7,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1964-02-25",
+     "units": 8,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1966-03-07",
+     "units": 9,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1966-12-19",
+     "units": 11,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1968-06-14",
+     "units": 12,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1970-08-11",
+     "units": 12,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1972-01-26",
+     "units": 12,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1974-02-01",
+     "units": 13,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1974-05-21",
+     "units": 14,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1979-01-03",
+     "units": 14,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1979-12-13",
+     "units": 15,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1980-07-17",
+     "units": 16,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1980-07-31",
+     "units": 17,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1980-11-19",
+     "units": 18,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1986-10-22",
+     "units": 19,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1988-01-14",
+     "units": 20,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1988-12-20",
+     "units": 21,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1989-03-22",
+     "units": 22,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1990-07-03",
+     "units": 23,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1991-10-03",
+     "units": 23,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1992-06-04",
+     "units": 24,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1992-06-11",
+     "units": 25,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1992-06-30",
+     "units": 26,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1993-06-10",
+     "units": 27,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1994-10-14",
+     "units": 28,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1994-12-14",
+     "units": 28,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1995-08-07",
+     "units": 28,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1996-03-26",
+     "units": 28,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1996-06-04",
+     "units": 28,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1998-12-16",
+     "units": 29,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "1999-01-29",
+     "units": 30,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2000-07-11",
+     "units": 31,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2000-12-13",
+     "units": 32,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2000-12-31",
+     "units": 33,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2001-11-14",
+     "units": 36,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2002-03-20",
+     "units": 36,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2003-02-10",
+     "units": 36,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2004-03-15",
+     "units": 36,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2005-07-18",
+     "units": 36,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2005-11-29",
+     "units": 37,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2006-12-27",
+     "units": 37,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2007-03-30",
+     "units": 38,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2008-07-23",
+     "units": 38,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2009-02-04",
+     "units": 38,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2012-09-28",
+     "units": 38,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2014-12-18",
+     "units": 39,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2016-04-22",
+     "units": 40,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    },
+    {
+     "from": "2016-11-22",
+     "units": 40,
+     "source_url": "https://treaties.un.org/",
+     "sha256": "untc-status-pages-2026-10-29"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-the-president",
+   "short": "BL: The President of the State",
+   "title": "Basic Law: The President of the State (חוק-יסוד: נשיא המדינה), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_נשיא_המדינה",
+   "versions": [
+    {
+     "from": "2026-09-09",
+     "units": 27,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=3081533",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-human-dignity-and-liberty",
+   "short": "BL: Human Dignity and Liberty",
+   "title": "Basic Law: Human Dignity and Liberty (חוק-יסוד: כבוד האדם וחירותו), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_כבוד_האדם_וחירותו",
+   "versions": [
+    {
+     "from": "2025-01-24",
+     "units": 13,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2901783",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-the-military",
+   "short": "BL: The Military",
+   "title": "Basic Law: The Military (חוק-יסוד: הצבא), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_הצבא",
+   "versions": [
+    {
+     "from": "2025-07-27",
+     "units": 6,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2950170",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-state-comptroller",
+   "short": "BL: The State Comptroller",
+   "title": "Basic Law: The State Comptroller (חוק-יסוד: מבקר המדינה), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_מבקר_המדינה",
+   "versions": [
+    {
+     "from": "2026-09-09",
+     "units": 14,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=3081546",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-israel-lands",
+   "short": "BL: Israel Lands",
+   "title": "Basic Law: Israel Lands (חוק-יסוד: מקרקעי ישראל), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_מקרקעי_ישראל",
+   "versions": [
+    {
+     "from": "2024-05-08",
+     "units": 3,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2856881",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-jerusalem",
+   "short": "BL: Jerusalem, the Capital of Israel",
+   "title": "Basic Law: Jerusalem, the Capital of Israel (חוק-יסוד: ירושלים בירת ישראל), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_ירושלים_בירת_ישראל",
+   "versions": [
+    {
+     "from": "2024-10-30",
+     "units": 8,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2890636",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-state-economy",
+   "short": "BL: The State Economy",
+   "title": "Basic Law: The State Economy (חוק-יסוד: משק המדינה), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_משק_המדינה",
+   "versions": [
+    {
+     "from": "2026-01-08",
+     "units": 9,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2974808",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-the-judiciary",
+   "short": "BL: The Judiciary",
+   "title": "Basic Law: The Judiciary (חוק-יסוד: השפיטה), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_השפיטה",
+   "versions": [
+    {
+     "from": "2026-06-14",
+     "units": 26,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=3019763",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-freedom-of-occupation",
+   "short": "BL: Freedom of Occupation",
+   "title": "Basic Law: Freedom of Occupation (חוק-יסוד: חופש העיסוק), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_חופש_העיסוק",
+   "versions": [
+    {
+     "from": "2025-01-24",
+     "units": 11,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=2901782",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-the-government",
+   "short": "BL: The Government",
+   "title": "Basic Law: The Government (חוק-יסוד: הממשלה), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_הממשלה",
+   "versions": [
+    {
+     "from": "2026-03-30",
+     "units": 61,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=3001797",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-the-knesset",
+   "short": "BL: The Knesset",
+   "title": "Basic Law: The Knesset (חוק-יסוד: הכנסת), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_הכנסת",
+   "versions": [
+    {
+     "from": "2026-08-09",
+     "units": 59,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=3040531",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-referendum",
+   "short": "BL: Referendum",
+   "title": "Basic Law: Referendum (חוק-יסוד: משאל עם), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_משאל_עם",
+   "versions": [
+    {
+     "from": "2020-07-22",
+     "units": 5,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=970934",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  },
+  {
+   "slug": "basic-law-nation-state",
+   "short": "BL: Israel, the Nation State of the Jewish People",
+   "title": "Basic Law: Israel, the Nation State of the Jewish People (חוק-יסוד: ישראל – מדינת הלאום של העם היהודי), current version, Hebrew",
+   "url": "https://he.wikisource.org/wiki/חוק-יסוד:_ישראל_–_מדינת_הלאום_של_העם_היהודי",
+   "versions": [
+    {
+     "from": "2020-10-25",
+     "units": 11,
+     "source_url": "https://he.wikisource.org/w/index.php?oldid=994741",
+     "sha256": "de2e473651d28c454ef0529928a1066722444ea8fff581aedc0d2c163f19bad1"
+    }
+   ]
+  }
+ ]
+}
