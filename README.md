@@ -26,7 +26,8 @@ Each Basic Law has one version so far (see Dates), so the first three show a sin
 
 - **[Ask Claude about Israeli law](https://global-law.lexifina.com/v1/try_claude?country=israel)**: opens Claude with a first question ready.
 - **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=israel)**: the same question in ChatGPT.
-- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D&jurisdictions=israel)**: a search of Israeli law for "כבוד האדם" (human dignity), returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Search Israeli law on our site](https://lexifina.com/law?country=israel&q=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D)**: a search for "כבוד האדם" (human dignity), with each provision's text and its versions, no account needed.
+- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D&jurisdiction=israel)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
 
 Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Hebrew or in English.
 
