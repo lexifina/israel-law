@@ -63,6 +63,7 @@ Each Basic Law's text is credited to the publisher (`Hebrew Wikisource and Wikid
 - `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before and compares it with the corpus, whose hash is in `data/corpus.sha256`: 82 versions of 15 acts, no mismatch.
 - It also checks that every commit's trailers parse, that `main` has no merge commits, that no commit date goes backwards and that none is dated after the build.
 - `tools/build.py` writes the history from that one corpus file, and the same corpus gives the same commit hashes; [`REPRODUCE.md`](REPRODUCE.md) records the results, and that no second build has been compared yet.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -86,6 +87,10 @@ Each Basic Law's text is credited to the publisher (`Hebrew Wikisource and Wikid
 See [`LICENSE`](LICENSE). No copyright subsists in statutes in Israel (Copyright Act, 5768-2007, section 6), so the Basic Laws' text, copied from Hebrew Wikisource, may be reproduced; the catalogue facts are Wikidata's (CC0) and the treaty actions are facts the UN Treaty Collection records. Lexifina's arrangement, commit messages, tables and tools are dedicated to the public domain under CC0 1.0.
 
 No AI model wrote, translated or corrected legal text; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
 
 ## More
 
