@@ -1,37 +1,43 @@
-# Israel: law history in git
+# ישראל: תולדות החקיקה ב-git
 
+**עברית** · [English](README.en.md)
 
-The law of Israel as a git history: one file per provision, one commit per version on the day it took effect, and the act that made each change as the commit's author. `git blame` names the act behind every section; `git log` lists every change to a section; picking a date gives the text in force that day.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/he/effort-dark.svg">
+<img alt="המשפט הישראלי במאגר זה: מה הוא מכיל, שינויים לפי שנת כניסתם לתוקף, שלמות ביחס למקורות הרשמיים ונכונות התוכן" src="data/he/effort-light.svg" width="880">
+</picture>
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Israel's national law, which global-law reads at `israel/national/acts/`.
+דיני מדינת ישראל כהיסטוריית git: קובץ אחד לכל הוראה, קומיט אחד לכל נוסח ביום כניסתו לתוקף, והחיקוק שערך כל שינוי רשום כמחבר הקומיט. `git blame` מציג את החיקוק שמאחורי כל סעיף; `git log` מפרט כל שינוי בסעיף; בחירת תאריך מחזירה את הנוסח שעמד בתוקף באותו יום.
 
-**What is in it now:** 13 Basic Laws, in Hebrew, each in one version, its current text (253 sections); a catalogue of those 13 Basic Laws with the day Wikidata gives for each, 1958 to 2018; and 67 actions of Israel (signatures, ratifications, accessions and one acceptance) in 40 multilateral treaties deposited with the UN Secretary-General, 1949 to 2016, as facts without treaty text. No ordinary statute, regulation or judgment is here yet. Each folder's `README.md` lists its files; [`REPRODUCE.md`](REPRODUCE.md) says how they were made.
+חלק מ-[lexifina/global-law](https://github.com/lexifina/global-law), היסטוריית git אחת לדינים של כל המדינות: זהו הדין הלאומי של ישראל, ש-global-law קורא בנתיב `israel/national/acts/`.
 
-Each Basic Law is a folder with one file per section, Hebrew letter suffixes written as Latin letters: `basic-law-human-dignity-and-liberty/sec-001.md` is section 1 of חוק-יסוד: כבוד האדם וחירותו (Basic Law: Human Dignity and Liberty), and `sec-001-a.md` its section 1א. The catalogue is in `catalogue/`, and the treaties in `treaties/`, one file per treaty (`treaties/untc-iv-11.md` is the Convention on the Rights of the Child).
+**מה יש כאן כעת:** 13 חוקי יסוד, בעברית, כל אחד בנוסח אחד, הנוסח הנוכחי שלו (253 סעיפים); קטלוג של 13 חוקי היסוד האלה עם התאריך שוויקינתונים מציין לכל אחד מהם, מ-1958 עד 2018; ו-67 פעולות של ישראל (חתימות, אשרורים, הצטרפויות וקבלה אחת) ב-40 אמנות רב-צדדיות שהופקדו בידי מזכ"ל האו"ם, מ-1949 עד 2016, כעובדות בלי נוסח האמנה. אין כאן עדיין אף חוק רגיל, תקנה או פסק דין. קובץ ה-`README.md` של כל תיקייה מפרט את קבציה; [`REPRODUCE.md`](REPRODUCE.md) מתאר כיצד נוצרו.
 
-The Basic Laws are in Hebrew, as Hebrew Wikisource prints them; there is no official English text, and no translation is part of this record. Catalogue and treaty entries are in English.
+כל חוק יסוד הוא תיקייה עם קובץ אחד לכל סעיף, וסיומות באותיות עבריות נכתבות באותיות לטיניות: `basic-law-human-dignity-and-liberty/sec-001.md` הוא סעיף 1 של חוק-יסוד: כבוד האדם וחירותו, ו-`sec-001-a.md` הוא סעיף 1א שלו. הקטלוג נמצא ב-`catalogue/`, והאמנות ב-`treaties/`, קובץ אחד לכל אמנה (`treaties/untc-iv-11.md` היא האמנה בדבר זכויות הילד).
 
-## Questions as git commands
+חוקי היסוד הם בעברית, כפי שוויקיטקסט העברי מביא אותם; אין להם נוסח רשמי באנגלית, ותרגום אינו חלק מרשומה זו. רשומות הקטלוג והאמנות הן באנגלית.
 
-| Question | Command |
+## שאלות כפקודות git
+
+| שאלה | פקודה |
 | --- | --- |
-| Every change to section 1 of Basic Law: Human Dignity and Liberty | `git log -p --word-diff -- basic-law-human-dignity-and-liberty/sec-001.md` |
-| Which act wrote each line of section 1? | `git blame basic-law-human-dignity-and-liberty/sec-001.md` |
-| Every version of Basic Law: Human Dignity and Liberty, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- basic-law-human-dignity-and-liberty ":^basic-law-human-dignity-and-liberty/README.md"` |
-| Section 1 as in force on 1 January 2026 | `python tools/on.py 2026-01-01 basic-law-human-dignity-and-liberty sec-001` |
+| כל שינוי בסעיף 1 של חוק-יסוד: כבוד האדם וחירותו | `git log -p --word-diff -- basic-law-human-dignity-and-liberty/sec-001.md` |
+| איזה חיקוק כתב כל שורה בסעיף 1? | `git blame basic-law-human-dignity-and-liberty/sec-001.md` |
+| כל נוסח של חוק-יסוד: כבוד האדם וחירותו, עם יום כניסתו לתוקף של כל אחד | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- basic-law-human-dignity-and-liberty ":^basic-law-human-dignity-and-liberty/README.md"` |
+| סעיף 1 כפי שעמד בתוקף ב-1 בינואר 2026 | `python tools/on.py 2026-01-01 basic-law-human-dignity-and-liberty sec-001` |
 
-Each Basic Law has one version so far (see Dates), so the first three show a single commit.
+לכל חוק יסוד יש עד כה נוסח אחד בלבד (ראו "תאריכים"), ולכן שלוש הפקודות הראשונות מציגות קומיט יחיד.
 
-**Outside git**, we also host this record publicly, for free:
+**מחוץ ל-git**, אנו מארחים את הרשומה הזו גם באופן ציבורי וללא תשלום:
 
-- **[Ask Claude about Israeli law](https://global-law.lexifina.com/v1/try_claude?country=israel)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=israel)**: the same question in ChatGPT.
-- **[Search Israeli law on our site](https://lexifina.com/law?country=israel&q=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D)**: a search for "כבוד האדם" (human dignity), with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D&jurisdiction=israel)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[לשאול את Claude על המשפט הישראלי](https://global-law.lexifina.com/v1/try_claude?country=israel)**: פותח את Claude עם שאלה ראשונה מוכנה.
+- **[לשאול את ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=israel)**: אותה שאלה ב-ChatGPT.
+- **[לחפש במשפט הישראלי באתר שלנו](https://lexifina.com/law?country=israel&q=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D)**: חיפוש של "כבוד האדם", עם נוסח כל הוראה והנוסחים שלה, בלי צורך בחשבון.
+- **[REST API למפתחים](https://global-law.lexifina.com/v1/search_law?query=%D7%9B%D7%91%D7%95%D7%93+%D7%94%D7%90%D7%93%D7%9D&jurisdiction=israel)**: אותו חיפוש כ-JSON, בלי מפתח. ראו את [התיעוד כאן](https://lexifina.com/api/global-law).
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Hebrew or in English.
+שני העוזרים קוראים את הרשומה דרך המחבר החינמי Global law (MCP, `https://global-law.lexifina.com/mcp`); בפעם הראשונה הצ'אט נותן לכם את הקישור שמוסיף אותו. אפשר לשאול בעברית או באנגלית.
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**קל לארח אותו בעצמכם.** כל מה שנדרש הוא git ו-Python, והכלים פועלים במחשב שלכם:
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -39,55 +45,57 @@ python3 tools/countries.py add israel/national/acts
 python3 tools/law.py show 2026-01-01 israel/national/acts/basic-law-human-dignity-and-liberty/sec-001.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+כשהשכפול נפתח ב-Claude Code, ב-Cursor, ב-VS Code או ב-Codex, הוא מפעיל גם שרת MCP מקומי עם אותם כלים ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
-## Dates
+## תאריכים
 
-Each commit is dated at noon, Asia/Jerusalem, on the day its `In-force:` trailer gives:
+כל קומיט מתוארך בצהריים, לפי Asia/Jerusalem, ביום שמציין ה-trailer `In-force:` שלו:
 
-- for a Basic Law, the day of the Hebrew Wikisource revision its text was read from (2020 to 2026), not the day the law or its last amendment took effect;
-- for a catalogue entry, the publication date Wikidata records for that Basic Law, not checked against Reshumot;
-- for a treaty action, the date the UN Treaty Collection gives;
-- git cannot store dates before 1970, so the 18 earlier commits are dated 1970-01-01, one second apart, with the real day in `In-force:`. Ask for a date with `tools/on.py`, not `git log --before`.
+- לחוק יסוד, יום גרסת הדף בוויקיטקסט העברי שממנה נקרא הנוסח (2020 עד 2026), ולא היום שבו נכנסו לתוקף החוק או התיקון האחרון שלו;
+- לרשומת קטלוג, תאריך הפרסום שוויקינתונים רושם לאותו חוק יסוד, שלא נבדק מול רשומות;
+- לפעולה באמנה, התאריך שמציין אוסף האמנות של האו"ם (UN Treaty Collection);
+- git אינו יכול לשמור תאריכים שלפני 1970, ולכן 18 הקומיטים המוקדמים יותר מתוארכים 1970-01-01, בהפרש של שנייה זה מזה, והיום האמיתי רשום ב-`In-force:`. בקשו תאריך באמצעות `tools/on.py`, ולא באמצעות `git log --before`.
 
-Each Basic Law's text is credited to the publisher (`Hebrew Wikisource and Wikidata`) as the "oldest version available" (`Kind: publisher`), not to a law, and no amendment is credited yet. Catalogue entries are credited to `Catalogue entry <date>` and treaty actions to the action (`Ratification: Paris Agreement ...`); the committer is Lexifina.
+נוסחו של כל חוק יסוד מיוחס למפרסם (`Hebrew Wikisource and Wikidata`) כ"נוסח המוקדם ביותר הזמין" (oldest version available, `Kind: publisher`), ולא לחוק כלשהו, ואף תיקון אינו מיוחס עדיין. רשומות הקטלוג מיוחסות ל-`Catalogue entry <date>`, והפעולות באמנות לפעולה עצמה (`Ratification: Paris Agreement ...`); המבצע (committer) הוא Lexifina.
 
-## How it is checked
+## כיצד זה נבדק
 
-- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before and compares it with the corpus, whose hash is in `data/corpus.sha256`: 82 versions of 15 acts, no mismatch.
-- It also checks that every commit's trailers parse, that `main` has no merge commits, that no commit date goes backwards and that none is dated after the build.
-- `tools/build.py` writes the history from that one corpus file, and the same corpus gives the same commit hashes; [`REPRODUCE.md`](REPRODUCE.md) records the results, and that no second build has been compared yet.
+- `tools/check_repo.py` קורא כל נוסח בחזרה מ-git ביום כניסתו לתוקף וביום שלפניו, ומשווה אותו לקורפוס, שה-hash שלו נמצא ב-`data/corpus.sha256`: 82 נוסחים של 15 חיקוקים, בלי אי-התאמה.
+- הוא בודק גם שה-trailers של כל קומיט ניתנים לפענוח, שאין ב-`main` קומיטי מיזוג, ששום תאריך קומיט אינו חוזר לאחור ושאף קומיט אינו מתוארך לאחר הבנייה.
+- `tools/build.py` כותב את ההיסטוריה מאותו קובץ קורפוס יחיד, ואותו קורפוס נותן את אותם hash-ים של קומיטים; [`REPRODUCE.md`](REPRODUCE.md) מתעד את התוצאות, וכן שעדיין לא הושוותה בנייה שנייה.
 
-## What it does not show
+## מה אינו מוצג כאן
 
-- **Amendments.** Each Basic Law is its current text only, not the text as enacted, with no amendment history.
-- **The official text.** The text is a third-party copy from Hebrew Wikisource and has not been checked against Reshumot (Sefer HaChukim), the official gazette.
-- **Ordinary statutes, regulations and judgments.** None yet.
-- **Other Basic Laws.** The temporary State Budget Basic Laws are not included, and the catalogue lacks the replaced 1968 and 1992 versions of Basic Law: The Government.
-- **Apparatus.** Editorial notes, chapter headings, signatures and gazette references are left out.
-- **Most treaties.** Only the 40 treaties read in the UN Treaty Collection that list Israel, as dated actions without their text; bilateral treaties are not included.
+- **תיקונים.** כל חוק יסוד מופיע בנוסחו הנוכחי בלבד, לא בנוסח שבו נחקק, ובלי היסטוריית תיקונים.
+- **הנוסח הרשמי.** הנוסח הוא העתק של צד שלישי מוויקיטקסט העברי, ולא נבדק מול רשומות (ספר החוקים), העיתון הרשמי.
+- **חוקים רגילים, תקנות ופסקי דין.** אין עדיין.
+- **חוקי יסוד אחרים.** חוקי היסוד הזמניים בדבר תקציב המדינה אינם כלולים, ובקטלוג חסרים הנוסחים של חוק-יסוד: הממשלה משנת 1968 ומשנת 1992 שהוחלפו.
+- **רכיבים נלווים.** הערות עריכה, כותרות פרקים, חתימות והפניות לרשומות הושמטו.
+- **רוב האמנות.** רק 40 האמנות שנקראו באוסף האמנות של האו"ם ושבהן מופיעה ישראל, כפעולות מתוארכות בלי נוסחן; אמנות דו-צדדיות אינן כלולות.
 
-## Sources
+## מקורות
 
-| Source | Kind | Past versions | Notes |
+| מקור | סוג | נוסחים קודמים | הערות |
 | --- | --- | --- | --- |
-| [Hebrew Wikisource](https://he.wikisource.org/wiki/%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%94:%D7%97%D7%95%D7%A7%D7%99_%D7%99%D7%A1%D7%95%D7%93) | Third-party copy of the Basic Laws | no, the current text only | Read on 30 October 2026; each page cites the Reshumot publications of the law and its amendments |
-| [Wikidata](https://www.wikidata.org/wiki/Q2368137) | Catalogue of the Basic Laws: titles, dates, identifiers | one date per Basic Law | CC0; facts only |
-| [UN Treaty Collection](https://treaties.un.org/) | Treaty actions deposited with the UN Secretary-General | every action, with its date | Facts only; no treaty text copied |
+| [ויקיטקסט העברי](https://he.wikisource.org/wiki/%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%94:%D7%97%D7%95%D7%A7%D7%99_%D7%99%D7%A1%D7%95%D7%93) | העתק של צד שלישי של חוקי היסוד | לא, הנוסח הנוכחי בלבד | נקרא ב-30 באוקטובר 2026; כל דף מפנה לפרסומים ברשומות של החוק ושל תיקוניו |
+| [ויקינתונים](https://www.wikidata.org/wiki/Q2368137) | קטלוג חוקי היסוד: כותרות, תאריכים, מזהים | תאריך אחד לכל חוק יסוד | CC0; עובדות בלבד |
+| [אוסף האמנות של האו"ם](https://treaties.un.org/) | פעולות באמנות שהופקדו בידי מזכ"ל האו"ם | כל פעולה, עם תאריכה | עובדות בלבד; לא הועתק נוסח של אמנה |
 
-## Licence
+## רישיון
 
-See [`LICENSE`](LICENSE). No copyright subsists in statutes in Israel (Copyright Act, 5768-2007, section 6), so the Basic Laws' text, copied from Hebrew Wikisource, may be reproduced; the catalogue facts are Wikidata's (CC0) and the treaty actions are facts the UN Treaty Collection records. Lexifina's arrangement, commit messages, tables and tools are dedicated to the public domain under CC0 1.0.
+ראו [`LICENSE`](LICENSE). בישראל אין זכות יוצרים בחיקוקים (חוק זכות יוצרים, התשס"ח-2007, סעיף 6), ולכן מותר לשכפל את נוסח חוקי היסוד, שהועתק מוויקיטקסט העברי; עובדות הקטלוג הן של ויקינתונים (CC0), והפעולות באמנות הן עובדות שרושם אוסף האמנות של האו"ם. הסידור, הודעות הקומיט, הטבלאות והכלים של Lexifina מוקדשים לנחלת הכלל לפי CC0 1.0.
 
-No AI model wrote, translated or corrected legal text; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+שום מודל בינה מלאכותית לא כתב, תרגם או תיקן נוסח משפטי; הסקריפטים נכתבו על ידי מודל בינה מלאכותית (ראו [`REPRODUCE.md`](REPRODUCE.md)).
 
-## More
+טקסט זה הוא תרגום של הגרסה האנגלית ([README.en.md](README.en.md)); במקרה של סתירה, הגרסה האנגלית גוברת.
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
+## מידע נוסף
 
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+מתוך המאגר [lexifina/global-law](https://github.com/lexifina/global-law) (דפים באנגלית):
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): כל התכונות, ומה שכל קורפוס חייב לתמוך בו (`git blame`, `law.py`, כלי ה-MCP)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): שאלות ותשובות · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): הצעת שינויים · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): שרת ה-MCP · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): כיצד נבנה · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): עד כמה כל קורפוס עדכני · [ניטור](https://github.com/lexifina/global-law/tree/main/monitoring): האם העדכונים פועלים · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): כיצד כל מקור רשמי נמצא במעקב אחר שינויים
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): מהירות הכלים, כפי שנמדדה
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): תרשימים וגשרים בין דיני העולם
+- [פרצות](https://github.com/lexifina/global-law/tree/main/vulnerabilities): טעויות בחקיקה כפי שפורסמה
