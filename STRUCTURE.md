@@ -14,6 +14,9 @@ Folder and file names are in Hebrew, the language people search the law in. Quot
 | `רשומות/חוקי-תקציב/…`, `רשומות/דיני-מדינת-ישראל/…` | חוקי תקציב; נוסח חדש של דיני מדינת ישראל | budget laws; new versions (Dinei Medinat Israel) |
 | `רשומות/עיתון-רשמי/<שנה>/…`, `רשומות/עיתון-רשמי-מנדטורי/<שנה>/…` | פקודות כפי שפורסמו בעיתון הרשמי של מועצת המדינה הזמנית ובעיתון הרשמי המנדטורי | ordinances as published in the Provisional Council's and the Mandate's Official Gazettes |
 | `פסיקה/בית-המשפט-העליון/<שנה>/<חודש>/<יום>/<הליך>-<מספר>-<שנה>-<סוג>.md` | החלטות ופסקי דין של בית המשפט העליון, לפי יום ההחלטה | Supreme Court decisions and judgments, by decision day |
+| `הצעות-חוק/<הכנסת-ה-NN>/<שנה>/<חודש>/<יום>/<שם הצעת החוק>-<פ-מספר-כנסת>.md` | הצעות חוק בכנסת: כל שלב שהכנסת פרסמה לו נוסח (דיון מוקדם, קריאה ראשונה) הוא גרסה של הקובץ; התיקייה לפי היום שבו הונחה ההצעה או פורסמה לראשונה | Knesset bills: each stage the Knesset published a text for (preliminary reading, first reading) is a version of the file; the folder is the day the bill was first laid or published |
+| `פרוטוקולים/מליאה/<הכנסת-ה-NN>/<שנה>/<חודש>/<יום>-ישיבה-<מספר>.md` | דברי הכנסת: פרוטוקולי מליאת הכנסת (ושל מועצת המדינה הזמנית, `מועצת-המדינה-הזמנית/`), לפי יום הישיבה | Knesset plenum transcripts (and those of the Provisional State Council), by session day |
+| `פרוטוקולים/ועדות/<הכנסת-ה-NN>/<שם הוועדה>/<שנה>/<חודש>/<יום>-ישיבה-<מספר>.md` | פרוטוקולי ועדות הכנסת, לפי יום הישיבה | Knesset committee transcripts, by session day |
 | `קטלוג/` | קטלוג חוקי היסוד (ויקינתונים) | catalogue of the Basic Laws (Wikidata) |
 | `אמנות/` | פעולות ישראל באמנות רב-צדדיות (או״ם) | Israel's actions in multilateral treaties (UN) |
 | `data/`, `tools/`, `visualisations/`, `vulnerabilities/` | נתונים, כלים ותרשימים (שמות משותפים לכל מאגרי Lexifina) | data, tools and charts (names shared by every Lexifina repository) |
@@ -27,7 +30,7 @@ Folder and file names are in Hebrew, the language people search the law in. Quot
 
 ## תאריכים · Dates
 
-Every commit is dated 12:00 Asia/Jerusalem on the day its text took effect, and carries `In-force:` and `In-force-evidence:` trailers. A consolidated version is dated by the amending law's in-force day (as the law or its publication states it); a law as published, by its publication in Reshumot (Interpretation Law 5741-1981, s. 10: a law takes effect on publication unless it says otherwise); a decision, by its day. Wiki edit dates are never used as in-force dates. Before 1970 git cannot store the day: the commit is dated 1970-01-01 and the real day leads the subject and the trailers.
+Every commit is dated 12:00 Asia/Jerusalem on the day its text took effect, and carries `In-force:` and `In-force-evidence:` trailers. A consolidated version is dated by the amending law's in-force day (as the law or its publication states it); a law as published, by its publication in Reshumot (Interpretation Law 5741-1981, s. 10: a law takes effect on publication unless it says otherwise); a decision, by its day. Wiki edit dates are never used as in-force dates. Bills and transcripts are legislative history, not law: a bill stage is dated by the day the bill says it was laid on the Knesset table or by the date its bills booklet prints, a transcript by its session day; their `In-force:` trailer carries that record day. Before 1970 git cannot store the day: the commit is dated 1970-01-01 and the real day leads the subject and the trailers.
 
 ## היסטוריה · History
 
