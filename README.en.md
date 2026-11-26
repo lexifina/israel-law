@@ -13,7 +13,7 @@ Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git h
 
 **What is in it now:** 13 Basic Laws, in Hebrew, each in one version, its current text (253 sections); a catalogue of those 13 Basic Laws with the day Wikidata gives for each, 1958 to 2018; and 67 actions of Israel (signatures, ratifications, accessions and one acceptance) in 40 multilateral treaties deposited with the UN Secretary-General, 1949 to 2016, as facts without treaty text. No ordinary statute, regulation or judgment is here yet. Each folder's `README.md` lists its files; [`REPRODUCE.md`](REPRODUCE.md) says how they were made.
 
-Each Basic Law is a folder with one file per section, Hebrew letter suffixes written as Latin letters: `basic-law-human-dignity-and-liberty/sec-001.md` is section 1 of חוק-יסוד: כבוד האדם וחירותו (Basic Law: Human Dignity and Liberty), and `sec-001-a.md` its section 1א. The catalogue is in `catalogue/`, and the treaties in `treaties/`, one file per treaty (`treaties/untc-iv-11.md` is the Convention on the Rights of the Child).
+Names are in Hebrew (see [`STRUCTURE.md`](STRUCTURE.md)): legislation in `חקיקה/` (Basic Laws in `חקיקה/חוקי-יסוד/`, laws in `חקיקה/חוקים/<year>/`), laws as published in the Official Gazette in `רשומות/ספר-החוקים/`, and Supreme Court decisions in `פסיקה/בית-המשפט-העליון/<year>/<month>/<day>/`. Each law is a folder with one file per section: `חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/סעיף-001.md` is section 1 of חוק-יסוד: כבוד האדם וחירותו (Basic Law: Human Dignity and Liberty), and `סעיף-001-א.md` its section 1א. The catalogue is in `קטלוג/`, and the treaties in `אמנות/`, one file per treaty (`אמנות/untc-iv-11.md` is the Convention on the Rights of the Child).
 
 The Basic Laws are in Hebrew, as Hebrew Wikisource prints them; there is no official English text, and no translation is part of this record. Catalogue and treaty entries are in English.
 
@@ -21,10 +21,10 @@ The Basic Laws are in Hebrew, as Hebrew Wikisource prints them; there is no offi
 
 | Question | Command |
 | --- | --- |
-| Every change to section 1 of Basic Law: Human Dignity and Liberty | `git log -p --word-diff -- basic-law-human-dignity-and-liberty/sec-001.md` |
-| Which act wrote each line of section 1? | `git blame basic-law-human-dignity-and-liberty/sec-001.md` |
-| Every version of Basic Law: Human Dignity and Liberty, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- basic-law-human-dignity-and-liberty ":^basic-law-human-dignity-and-liberty/README.md"` |
-| Section 1 as in force on 1 January 2026 | `python tools/on.py 2026-01-01 basic-law-human-dignity-and-liberty sec-001` |
+| Every change to section 1 of Basic Law: Human Dignity and Liberty | `git log -p --word-diff -- חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/סעיף-001.md` |
+| Which act wrote each line of section 1? | `git blame חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/סעיף-001.md` |
+| Every version of Basic Law: Human Dignity and Liberty, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו ":^חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/README.md"` |
+| Section 1 as in force on 1 January 2026 | `python tools/on.py 2026-01-01 חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו סעיף-001` |
 
 Each Basic Law has one version so far (see Dates), so the first three show a single commit.
 
@@ -42,7 +42,7 @@ Both assistants read the record through the free Global law connector (MCP, `htt
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
 python3 tools/countries.py add israel/national/acts
-python3 tools/law.py show 2026-01-01 israel/national/acts/basic-law-human-dignity-and-liberty/sec-001.md
+python3 tools/law.py show 2026-01-01 israel/national/acts/חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/סעיף-001.md
 ```
 
 Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).

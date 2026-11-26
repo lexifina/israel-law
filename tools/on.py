@@ -66,7 +66,7 @@ def resolve(commit: str, act: str, unit: str) -> str | None:
         return exact
     m = re.fullmatch(r'(\d+)(.*)', unit)
     if m:
-        want = re.compile(rf'{re.escape(act)}/[a-z-]*0*{int(m.group(1))}{re.escape(m.group(2))}\.md$')
+        want = re.compile(rf'{re.escape(act)}/[^/0-9]*0*{int(m.group(1))}-?{re.escape(m.group(2))}\.md$')
         hits = [f for f in files if want.match(f)]
         # A bare number means the article: "19" is art-019, not a transitional provision numbered 19.
         arts = [f for f in hits if f.split('/', 1)[1].startswith(('art-', 'art'))]
