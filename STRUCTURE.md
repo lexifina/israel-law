@@ -11,6 +11,8 @@ Folder and file names are in Hebrew, the language people search the law in. Quot
 | `חקיקה/פקודות/<שנה>/<שם>/סעיף-NNN.md` | פקודות (מנדט ונוסח חדש) | ordinances (Mandate and new version) |
 | `חקיקה/תקנות/<שנה>/<שם>/…` , `חקיקה/צווים/…` , `חקיקה/כללים/…` , `חקיקה/אחר/…` | חקיקת משנה | secondary legislation |
 | `רשומות/ספר-החוקים/<שנה>/<שם החוק>.md` | החוק כפי שפורסם ברשומות (ספר החוקים) | each law as published in the Official Gazette (Sefer HaHukim) |
+| `רשומות/חוקי-תקציב/…`, `רשומות/דיני-מדינת-ישראל/…` | חוקי תקציב; נוסח חדש של דיני מדינת ישראל | budget laws; new versions (Dinei Medinat Israel) |
+| `רשומות/עיתון-רשמי/<שנה>/…`, `רשומות/עיתון-רשמי-מנדטורי/<שנה>/…` | פקודות כפי שפורסמו בעיתון הרשמי של מועצת המדינה הזמנית ובעיתון הרשמי המנדטורי | ordinances as published in the Provisional Council's and the Mandate's Official Gazettes |
 | `פסיקה/בית-המשפט-העליון/<שנה>/<חודש>/<יום>/<הליך>-<מספר>-<שנה>-<סוג>.md` | החלטות ופסקי דין של בית המשפט העליון, לפי יום ההחלטה | Supreme Court decisions and judgments, by decision day |
 | `קטלוג/` | קטלוג חוקי היסוד (ויקינתונים) | catalogue of the Basic Laws (Wikidata) |
 | `אמנות/` | פעולות ישראל באמנות רב-צדדיות (או״ם) | Israel's actions in multilateral treaties (UN) |
