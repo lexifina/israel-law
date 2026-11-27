@@ -11,11 +11,11 @@ The law of Israel as a git history: one file per provision, one commit per versi
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Israel's national law, which global-law reads at `israel/national/acts/`.
 
-**What is in it now:** 13 Basic Laws, in Hebrew, each in one version, its current text (253 sections); a catalogue of those 13 Basic Laws with the day Wikidata gives for each, 1958 to 2018; and 67 actions of Israel (signatures, ratifications, accessions and one acceptance) in 40 multilateral treaties deposited with the UN Secretary-General, 1949 to 2016, as facts without treaty text. No ordinary statute, regulation or judgment is here yet. Each folder's `README.md` lists its files; [`REPRODUCE.md`](REPRODUCE.md) says how they were made.
+**What is in it now:** Israeli legislation in Hebrew: the Basic Laws, 925 Knesset laws, 50 ordinances and 46 regulations, orders and other secondary texts in consolidated text with their amendments; 7,657 laws as published in Sefer HaHukim (1949-2026), with the budget laws and 716 ordinances from the Official Gazettes; 559,882 Supreme Court decisions (1996-2022); and, as legislative history, 12,969 Knesset bills and 14,427 plenum and committee transcripts. [`STRUCTURE.md`](STRUCTURE.md) sets out the folders; [`REPRODUCE.md`](REPRODUCE.md) says how the first files were made.
 
 Names are in Hebrew (see [`STRUCTURE.md`](STRUCTURE.md)): legislation in `חקיקה/` (Basic Laws in `חקיקה/חוקי-יסוד/`, laws in `חקיקה/חוקים/<year>/`), laws as published in the Official Gazette in `רשומות/ספר-החוקים/`, and Supreme Court decisions in `פסיקה/בית-המשפט-העליון/<year>/<month>/<day>/`. Each law is a folder with one file per section: `חקיקה/חוקי-יסוד/כבוד-האדם-וחירותו/סעיף-001.md` is section 1 of חוק-יסוד: כבוד האדם וחירותו (Basic Law: Human Dignity and Liberty), and `סעיף-001-א.md` its section 1א. The catalogue is in `קטלוג/`, and the treaties in `אמנות/`, one file per treaty (`אמנות/untc-iv-11.md` is the Convention on the Rights of the Child).
 
-The Basic Laws are in Hebrew, as Hebrew Wikisource prints them; there is no official English text, and no translation is part of this record. Catalogue and treaty entries are in English.
+The Basic Laws and the consolidated laws are in Hebrew, as Hebrew Wikisource prints them; there is no official English text, and no translation is part of this record. Catalogue and treaty entries are in English.
 
 ## Questions as git commands
 
